@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* === Global Styles === */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.text_gray {
+  color: #808080;
+}
+
+/* === Navbar === */
+#header {
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: #a1a0a0;
+  transition: 0.3s ease all;
+}
+
+.active{
+    color: #f8b810 !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #f8b810;
+  transition: 0.3s ease all;
+}
+
+.btn-outline-blue {
+  border: 2px solid #095ca2;
+  color: #095ca2;
+  transition: 0.3s ease all;
+}
+
+.btn-outline-blue:hover {
+  color: #fff !important;
+  background-color: #095ca2;
+  transition: 0.3s ease all;
+}
+
+/* === Hero Section === */
+
+.hero {
+  padding: 80px 1rem 25px 1rem;
+  min-height: 100vh;
+}
+
+.btn-more{
+  background-color: #F8B810;
+  padding: 12px 20px;
+  transition: .3s ease all;
+}
+
+.btn-more:hover{
+  background-color: #f29100;
+  transition: .3s ease all;
+}
+
+/* === Dampak Section === */
+
+.stat-card{
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.050);
+  transition: .3s ease all;
+}
+/*
+
+/* === Drug Types Section === */
+
+.drug-card {
+  height: 100%;
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  transition: 0.3s ease all;
+}
+
+.drug-card:hover,
+.resource-card:hover,
+.help-card:hover {
+  transform: translateY(-5px);
+  cursor: default;
+  transition: .3s ease all;
+}
+
+/* === Law Section === */
+
+.blue-icon {
+  color: #095ca2;
+  background-color: #095da21c;
+}
+
+.law-card{
+    transition: .3s ease all;
+}
+
+.law-card:hover,
+.stat-card:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    cursor: default;
+    transition: .3s ease all;
+}
+/*
+
+/* === Resources Section === */
+
+.resource-card{
+    border-radius: 12px;
+    transition: .3s ease all;
+}
+/*
+
+/* === Help Section === */
+
+.help-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: .3s ease all;
+}
+/*
+
+/* === Footer === */
+footer {
+  background-color: #095ca2;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .stat-card{
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    background-color: #fffffff5;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+}
