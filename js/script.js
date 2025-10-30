@@ -61,9 +61,6 @@ window.addEventListener('scroll', function() {
     const help = document.getElementById('help');
     
     if(window.scrollY >= hero.offsetTop){
-        navDampak.classList.remove('active');
-        navJenis.classList.remove('active');
-        navLaw.classList.remove('active');
         navBeranda.classList.add('active');
     }else{
         navBeranda.classList.remove('active');

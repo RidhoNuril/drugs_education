@@ -40,6 +40,10 @@ section{
   color: #808080;
 }
 
+.hoover_underline:hover{
+  text-decoration: underline !important;
+}
+
 /* === Navbar === */
 #header {
   padding: 10px 0;
@@ -76,7 +80,22 @@ section{
 
 .hero {
   padding: 80px 1rem 25px 1rem;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.hero-stat-data,
+.hero-stat-desc{
+  transition: .3s ease all;
+}
+
+.hero-stat:hover .hero-stat-data{
+  transform: translateY(-5px);
+  transition: .3s ease all;
+}
+
+.hero-stat:hover .hero-stat-desc{
+  color: #333;
+  transition: .3s ease all;
 }
 
 .btn-more{
@@ -158,11 +177,14 @@ footer {
   background-color: #095ca2;
   color: #fff;
   padding: 1.5rem 0;
-  text-align: center;
 }
 
 /* === Responsive === */
 @media (max-width: 992px) {
+  .hero{
+    height: auto !important;
+  }
+  
   .hero-title{
     font-size: 36px !important;
   }
@@ -178,9 +200,5 @@ footer {
 
   .navbar-collapse {
     background-color: #fffffff5;
-  }
-
-  .hero-content {
-    flex-direction: column;
   }
 }
